@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
+@import "react-image-lightbox/style.css"; 
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.5rem;
+  color: #3b82f6;
+}
+
+.citySwiper .swiper-slide {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.citySwiper .swiper-slide-active {
+  opacity: 1;
+}
+.cityGallery .swiper-slide {
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.cityGallery .swiper-slide:hover {
+  transform: scale(1.05);
+}
+/* Custom Swiper Styles */
+.citySwiper {
+  padding: 20px 0;
+  overflow: visible !important;
+}
+
+.citySwiper .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.citySwiper .swiper-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.citySwiper .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+.citySwiper .swiper-slide-active {
+  z-index: 2;
+  transform: scale(1);
+  opacity: 1;
+}
