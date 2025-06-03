@@ -6,11 +6,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
         {/* Logo di kiri */}
         <Link to="/" className="flex items-center space-x-2">
-          <img
-            src="/logo.png"
-            alt="JelajahIndo Logo"
-            className="h-12 w-auto"
-          />
+          <img src="/logo.png" alt="JelajahIndo Logo" className="h-12 w-auto" />
           <span className="text-xl font-bold text-gray-800">JelajahIndo</span>
         </Link>
 
