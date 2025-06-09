@@ -193,7 +193,12 @@ function ShowDetail() {
                 </div>
               </div>
             </div>
-
+            
+            <div className='p-5'>
+              <h3 className='text-xl font-bold text-amber-900'>
+                Similarity Score : {data.score}
+              </h3>
+            </div>
             <div className="p-5">
               <h3 className="text-xl font-bold text-gray-800 mb-2">{data.place_name}</h3>
 
